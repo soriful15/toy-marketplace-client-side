@@ -1,10 +1,18 @@
 import React from 'react';
 import Gallery from '../Gallery/Gallery';
+import Banner from '../Banner/Banner';
 
 const Home = () => {
     return (
         <div>
-           <Gallery></Gallery>
+
+            <section>
+                <Banner></Banner>
+            </section>
+
+            <section>
+                <Gallery></Gallery>
+            </section>
         </div>
     );
 };

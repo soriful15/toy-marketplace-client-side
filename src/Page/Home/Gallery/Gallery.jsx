@@ -15,11 +15,11 @@ const Gallery = () => {
     return (
         <div className='container mx-auto mt-10 mb-10'>
             <h1 className='text-center text-5xl font-bold text-blue-500'>Animal Toys Collection</h1>
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-7 mt-10'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-7 mt-10 '>
 
 
 
-                <div className="card w-96 bg-base-100 shadow-xl border-2">
+                <div className="card w-96 bg-base-100 shadow-xl border-2 ">
                     <figure><img src={gallary1} alt="Shoes"  /></figure>
 
                 </div>
