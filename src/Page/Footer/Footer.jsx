@@ -5,10 +5,7 @@ const Footer = () => {
     return (
 
         <>
-
-            <div className='bg-cyan-100 py-4 px-10 w-full  '>
-
-
+              <div className='bg-cyan-100 py-4 px-10 w-full  '>
                 <footer className="footer  text-base-content">
                     <div>
                         <img className='rounded-full w-40' src={logo} alt="" />
