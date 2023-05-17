@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/Footer/logo.jpg'
+import logo from '../../assets/logo/logo.jpg'
 import { FaPhone,FaMapMarkerAlt, } from 'react-icons/fa';
 const Footer = () => {
     return (
@@ -11,8 +11,8 @@ const Footer = () => {
 
                 <footer className="footer  text-base-content">
                     <div>
-                        <span className=" text-lime-800 font-bold text-2xl">Animal Toy KingDom</span>
-                        <img className='rounded-full' src={logo} alt="" />
+                        <img className='rounded-full w-40' src={logo} alt="" />
+                        <span className=" text-zinc-700 font-bold text-2xl">Animal Toy KingDom</span>
 
                     </div>
                     <div>
