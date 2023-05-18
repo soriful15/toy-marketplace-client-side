@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { Rating } from '@smastrom/react-rating'
-// import { FaRegBookmark, FaShareAlt, FaEye, FaStar, FaRegStar } from 'react-icons/fa';
+
 import '@smastrom/react-rating/style.css'
 const ShopByCategory = () => {
 
