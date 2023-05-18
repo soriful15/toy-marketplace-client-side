@@ -27,7 +27,7 @@ const AuthProvider = ({ children }) => {
     }
 
 
-    const updateUserDate = (name, photo, email) => {
+    const updateUserProfile = (name, photo, email) => {
         return updateProfile (auth.currentUser, {
             displayName: name,
             photoURL: photo,
@@ -61,7 +61,7 @@ const AuthProvider = ({ children }) => {
 
 
     const authInfo = {
-        createUser, singIn, user, loading, googleProvider, logOut,updateUserDate
+        createUser, singIn, user, loading, googleProvider, logOut,updateUserProfile
     }
     return (
         <>

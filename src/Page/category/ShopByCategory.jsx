@@ -38,9 +38,11 @@ const ShopByCategory = () => {
                                     </figure>
                                     <div className="card-body items-center text-center">
                                         <h2 className="card-title text-blue-600">{toy.name}</h2>
-                                        <p className='text-green-700 font-normal'>Price: $<span >{toy.price}</span> </p>
+                                        <p className='text-green-700 font-normal'>Price: ${toy.price}</p>
+                                        <div className='flex items-center'>
 
-                                        <p className='flex items-center'><Rating style={{ maxWidth: 150 }} value={Math.round(toy?.ratings) || 0} readOnly /><span className='ms-2'> {toy?.ratings}</span> </p>
+                                            <Rating style={{ maxWidth: 150 }} value={Math.round(toy?.ratings) || 0} readOnly /><span className='ms-2'> {toy?.ratings}</span>
+                                        </div>
                                         <div className="card-actions">
                                             <button className="btn btn-error">View Details</button>
                                         </div>
@@ -50,7 +52,7 @@ const ShopByCategory = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                <div className='md:flex  md:items-center md:justify-center gap-6'>
+                    <div className='md:flex  md:items-center md:justify-center gap-6'>
                         {category
                             .filter(toy => toy.category === 'Dinosaur').slice(0, 2)
                             .map((toy, index) => (
@@ -62,7 +64,10 @@ const ShopByCategory = () => {
                                         <h2 className="card-title text-blue-600">{toy.name}</h2>
                                         <p className='text-green-700 font-normal'>Price: $<span >{toy.price}</span> </p>
 
-                                        <p className='flex items-center'><Rating style={{ maxWidth: 150 }} value={Math.round(toy?.ratings) || 0} readOnly /><span className='ms-2'> {toy?.ratings}</span> </p>
+                                        <div className='flex items-center'>
+
+                                            <Rating style={{ maxWidth: 150 }} value={Math.round(toy?.ratings) || 0} readOnly /><span className='ms-2'> {toy?.ratings}</span>
+                                        </div>
                                         <div className="card-actions">
                                             <button className="btn btn-error">View Details</button>
                                         </div>
@@ -72,7 +77,7 @@ const ShopByCategory = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                <div className='md:flex  md:items-center md:justify-center gap-6'>
+                    <div className='md:flex  md:items-center md:justify-center gap-6'>
                         {category
                             .filter(toy => toy.category === 'Cat').slice(0, 2)
                             .map((toy, index) => (
@@ -84,7 +89,10 @@ const ShopByCategory = () => {
                                         <h2 className="card-title text-blue-600">{toy.name}</h2>
                                         <p className='text-green-700 font-normal'>Price: $<span >{toy.price}</span> </p>
 
-                                        <p className='flex items-center'><Rating style={{ maxWidth: 150 }} value={Math.round(toy?.ratings) || 0} readOnly /><span className='ms-2'> {toy?.ratings}</span> </p>
+                                        <div className='flex items-center'>
+
+                                            <Rating style={{ maxWidth: 150 }} value={Math.round(toy?.ratings) || 0} readOnly /><span className='ms-2'> {toy?.ratings}</span>
+                                        </div>
                                         <div className="card-actions">
                                             <button className="btn btn-error">View Details</button>
                                         </div>
@@ -99,7 +107,7 @@ const ShopByCategory = () => {
 
 
 
-          
+
 
 
 
