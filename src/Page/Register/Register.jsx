@@ -101,14 +101,12 @@ const Register = () => {
                                 <label className="label">
                                 </label>
                                 <input type="password" name="password" placeholder="password" className="input input-bordered" required />
-                                <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
+                               
                             </div>
                             <p className='text-yellow-400 text-center mb-2 px-4 font-bold text-xl'>{error}</p>
                             <p className='text-green-600 px-4 text-center mb-2 font-bold text-xl'>{success}</p>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Register</button>
+                                <button className="btn btn-active">Register</button>
                             </div>
                             <p className='text-center'>AlReady have an Account? <Link to='/login'><span className='text-green-500'>login</span></Link></p>
                         </form >
