@@ -13,6 +13,7 @@ import Login from '../Page/Login/Login'
 import Register from "../Page/Register/Register";
 import Blog from "../Page/Blog/Blog";
 import SingleToy from "../Page/AllToy/SingleToy";
+import CategoryDetails from "../Page/category/CategoryDetails";
 
 const router = createBrowserRouter([
   {
@@ -50,8 +51,13 @@ const router = createBrowserRouter([
         element: <PrivateRoute><AddAToys></AddAToys></PrivateRoute>
       },
       {
-        path: '/singleToy/:id',
+        path: '/singleToys/:id',
         element: <PrivateRoute><SingleToy></SingleToy></PrivateRoute>,
+        loader: ({params})=> fetch(`http://localhost:5000/allCollection/${params.id}`)
+      },
+      {
+        path: '/categoryDetails/:id',
+        element: <PrivateRoute><CategoryDetails></CategoryDetails></PrivateRoute>,
         loader: ({params})=> fetch(`http://localhost:5000/allCollection/${params.id}`)
       },
 

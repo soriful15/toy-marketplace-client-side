@@ -14,7 +14,7 @@ const AllToyRow = ({ allToy,index }) => {
             <td className='text-lg text-orange-700'>{category}</td>
             <td className='text-lg text-lime-700'>{price}</td>
             <td className='text-lg text-violet-800'>{quantity}</td>
-            <Link to={`/singleToy/${_id}`} className='btn btn-success mt-2'>View Details</Link>
+            <Link to={`/singleToys/${_id}`} className='btn btn-success mt-2'>View Details</Link>
         </tr>
     );
 };

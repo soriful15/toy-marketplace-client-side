@@ -5,9 +5,8 @@ import 'react-tabs/style/react-tabs.css';
 import { Rating } from '@smastrom/react-rating'
 
 import '@smastrom/react-rating/style.css'
+import { Link } from 'react-router-dom';
 const ShopByCategory = () => {
-
-
 
     const [category, setCategory] = useState([])
     useEffect(() => {
@@ -44,7 +43,7 @@ const ShopByCategory = () => {
                                             <Rating style={{ maxWidth: 150 }} value={Math.round(toy?.ratings) || 0} readOnly /><span className='ms-2'> {toy?.ratings}</span>
                                         </div>
                                         <div className="card-actions">
-                                            <button className="btn btn-error">View Details</button>
+                                            <Link to={`/categoryDetails/${toy._id}`}> <button className="btn btn-error">View Details</button></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -69,7 +68,7 @@ const ShopByCategory = () => {
                                             <Rating style={{ maxWidth: 150 }} value={Math.round(toy?.ratings) || 0} readOnly /><span className='ms-2'> {toy?.ratings}</span>
                                         </div>
                                         <div className="card-actions">
-                                            <button className="btn btn-error">View Details</button>
+                                            <Link to={`/categoryDetails/${toy._id}`}> <button className="btn btn-error">View Details</button></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -94,7 +93,7 @@ const ShopByCategory = () => {
                                             <Rating style={{ maxWidth: 150 }} value={Math.round(toy?.ratings) || 0} readOnly /><span className='ms-2'> {toy?.ratings}</span>
                                         </div>
                                         <div className="card-actions">
-                                            <button className="btn btn-error">View Details</button>
+                                            <Link to={`/categoryDetails/${toy._id}`}> <button className="btn btn-error">View Details</button></Link>
                                         </div>
                                     </div>
                                 </div>
