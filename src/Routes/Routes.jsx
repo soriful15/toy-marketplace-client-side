@@ -9,10 +9,10 @@ import AllToy from "../Page/AllToy/AllToy";
 import PrivateRoute from "./PrivateRoute";
 import MyToys from "../Page/MyToys/MyToys";
 import AddAToys from "../Page/AddAToy/AddAToys";
-import SingleToy from "../Page/SingleToy/SingleToy";
 import Login from '../Page/Login/Login'
 import Register from "../Page/Register/Register";
 import Blog from "../Page/Blog/Blog";
+import SingleToy from "../Page/AllToy/SingleToy";
 
 const router = createBrowserRouter([
   {
@@ -50,8 +50,9 @@ const router = createBrowserRouter([
         element: <PrivateRoute><AddAToys></AddAToys></PrivateRoute>
       },
       {
-        path: '/singleToys',
-        element: <PrivateRoute><SingleToy></SingleToy></PrivateRoute>
+        path: '/singleToy/:id',
+        element: <PrivateRoute><SingleToy></SingleToy></PrivateRoute>,
+        loader: ({params})=> fetch(`http://localhost:5000/allCollection/${params.id}`)
       },
 
     ]

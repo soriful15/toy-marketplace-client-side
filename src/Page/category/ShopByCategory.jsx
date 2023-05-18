@@ -11,7 +11,7 @@ const ShopByCategory = () => {
 
     const [category, setCategory] = useState([])
     useEffect(() => {
-        fetch('category.json')
+        fetch('http://localhost:5000/allCollection')
             .then(res => res.json())
             .then(data => setCategory(data))
 

@@ -35,11 +35,6 @@ const Header = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/singleToys' title=' Add A toy Link' className={({ isActive }) => isActive ? "text-blue-600" : ''}>
-                                Single Toy
-                            </NavLink>
-                        </li>
-                        <li>
                             <NavLink to='/allToys' title='All Toys Link' className={({ isActive }) => isActive ? "text-blue-600" : ''}>
                                 All Toys
                             </NavLink>
@@ -82,11 +77,7 @@ const Header = () => {
                                 Blog
                             </NavLink>
                         </li>
-                        <li>
-                            <NavLink to='/singleToys' title=' Add A toy Link' className={({ isActive }) => isActive ? "text-blue-600" : ''}>
-                                Single Toy
-                            </NavLink>
-                        </li>
+                       
                         <li>
                             <NavLink to='/allToys' title='All Toys Link' className={({ isActive }) => isActive ? "text-blue-600" : ''}>
                                 All Toys
