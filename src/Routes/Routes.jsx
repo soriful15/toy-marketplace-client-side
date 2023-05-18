@@ -5,13 +5,14 @@ import {
 import Main from "../LayOut/Main";
 import Home from "../Page/Home/Home/Home";
 import ErrorPage from "../LayOut/ErrorPage";
-// import AllToy from "../Page/AllToy/AllToy";
-// import PrivateRoute from "./PrivateRoute";
-// import MyToys from "../Page/MyToys/MyToys";
-// import AddAToys from "../Page/AddAToy/AddAToys";
-// import SingleToy from "../Page/SingleToy/SingleToy";
+import AllToy from "../Page/AllToy/AllToy";
+import PrivateRoute from "./PrivateRoute";
+import MyToys from "../Page/MyToys/MyToys";
+import AddAToys from "../Page/AddAToy/AddAToys";
+import SingleToy from "../Page/SingleToy/SingleToy";
 import Login from '../Page/Login/Login'
 import Register from "../Page/Register/Register";
+import Blog from "../Page/Blog/Blog";
 
 const router = createBrowserRouter([
   {
@@ -32,22 +33,26 @@ const router = createBrowserRouter([
         path: '/register',
         element: <Register></Register>
       },
-      // {
-      //   path: '/allToys',
-      //   element: <PrivateRoute><AllToy></AllToy></PrivateRoute>
-      // },
-      // {
-      //   path: '/myToys',
-      //   element: <PrivateRoute><MyToys></MyToys></PrivateRoute>
-      // },
-      // {
-      //   path: '/addToys',
-      //   element: <PrivateRoute><AddAToys></AddAToys></PrivateRoute>
-      // },
-      // {
-      //   path: '/singleToys',
-      //   element: <PrivateRoute><SingleToy></SingleToy></PrivateRoute>
-      // },
+      {
+        path: '/blog',
+        element:<Blog></Blog>
+      },
+      {
+        path: '/allToys',
+        element: <PrivateRoute><AllToy></AllToy></PrivateRoute>
+      },
+      {
+        path: '/myToys',
+        element: <PrivateRoute><MyToys></MyToys></PrivateRoute>
+      },
+      {
+        path: '/addToys',
+        element: <PrivateRoute><AddAToys></AddAToys></PrivateRoute>
+      },
+      {
+        path: '/singleToys',
+        element: <PrivateRoute><SingleToy></SingleToy></PrivateRoute>
+      },
 
     ]
   },
