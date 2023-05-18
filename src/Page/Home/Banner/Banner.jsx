@@ -4,8 +4,6 @@ import banner1 from '../../../assets/banner/banner-1.jpg'
 import banner2 from '../../../assets/banner/banner-2.jpg'
 import banner3 from '../../../assets/banner/banner-3.jpg'
 import banner4 from '../../../assets/banner/banner-4.jpg'
-// import banner5 from '../../../assets/images/banner/5.jpg'
-// import banner6 from '../../../assets/images/banner/6.jpg'
 const Banner = () => {
   return (
     <div className="carousel w-full h-[600px] mt-14 lg:container mx-auto ">

@@ -1,0 +1,101 @@
+[
+    {
+      "img": "https://i.ibb.co/0J92MfD/horse1.jpg",
+      "name": "Schleich Horse",
+      "seller_name": "Md Shuvo islam",
+      "seller_email": "info@gmail.com",
+      "quantity": 7,
+      "price": 420,
+      "ratings": 4,
+      "details": " Schleich horses are known for their realistic and detailed designs. They strive to capture the anatomy, posture, and unique characteristics of different horse breeds.",
+      "category": "Horse"
+    },
+    {
+      "img": "https://i.ibb.co/cXprGTY/Lovely-Kneeling-Plush-Unicorn-Toy-Soft-Cute-Stuffed-Animal-Toys-Popular-Plush-Doll-Kid-Playmate-Baby.jpg",
+      "name": "Unicorn plush horse",
+      "seller_name": "Md Shuvo islam",
+      "seller_email": "info@gmail.com",
+      "quantity": 7,
+      "price": 520,
+      "ratings": 4.2,
+      "details": " Unicorn plush horses typically feature a horse-like body with a single horn on their forehead. The body may have a soft, cuddly texture and a variety of colors, including pastel shades or vibrant hues",
+      "category": "Horse"
+    },
+    {
+      "img": "https://i.ibb.co/9VB3VP0/dinosaurs.jpg",
+      "name": "Prehistoris Dinosaur Toy Animal",
+      "seller_name": "Md Shuvo islam",
+      "seller_email": "info@gmail.com",
+      "quantity": 6,
+      "price": 620,
+      "ratings": 4.5,
+      "details": "Prehistoric dinosaur toys strive to depict different species of dinosaurs with a high level of realism. They often feature accurate body proportions, distinct features, and textures inspired by scientific knowledge and fossil evidence",
+      "category": "Dinosaur"
+    },
+    {
+      "img": "https://i.ibb.co/VWn6Wd1/3-AAA-genuine-dinosaur-toy-animal-model-hadrosaurs-Parasaurolophus-dinosaur-simulation-model-dinosau.jpg",
+      "name": "Realistic Dinosaur Toy Animal",
+      "seller_name": "Md Shuvo islam",
+      "seller_email": "info@gmail.com",
+      "quantity": 6,
+      "price": 720,
+      "ratings": 5,
+      "details": "Realistic dinosaur toys accurately depict the anatomical features of different dinosaur species. They strive to capture details such as skeletal structure, body proportions, and limb placement based on scientific knowledge and fossil evidence",
+      "category": "Dinosaur"
+    },
+    {
+      "img": "https://i.ibb.co/DrxvvXT/Hot-Sale-80cm-Long-Giant-Dinosaur-Toy-Stuffed-Animals-Green-Plush-Doll-Kawaii-Baby-Toys-For.jpg",
+      "name": "Triceratops Dinosaur Dinosaur Toy Animal",
+      "seller_name": "Md Shuvo islam",
+      "seller_email": "info@gmail.com",
+      "quantity": 6,
+      "price": 720,
+      "ratings": 5,
+      "details": "Triceratops toys typically feature a large, sturdy body with a distinctive three-horned face. They have a bulky frame, a short tail, and a bony frill extending from the back of their skull",
+      "category": "Dinosaur"
+    },
+    {
+      "img": "https://i.ibb.co/hFQ1Nn1/download.jpg",
+      "name": "Puss In Boots McDonalds Cat",
+      "seller_name": "Md Shuvo islam",
+      "seller_email": "info@gmail.com",
+      "quantity": 5,
+      "price": 620,
+      "ratings": 4,
+      "details": "The Puss in Boots McDonald's toy typically features a small plastic figurine of Puss in Boots, the charming and adventurous cat character from the Shrek movies. The figurine is usually around 3-4 inches tall.",
+      "category": "Cat"
+    },
+    {
+      "img": "https://i.ibb.co/hmWJYmc/R.jpg",
+      "name": "Fluffy Grumpy Cat",
+      "seller_name": "Md Shuvo islam",
+      "seller_email": "info@gmail.com",
+      "quantity": 5,
+      "price": 420,
+      "ratings": 4.2,
+      "details": "The Fluffy Grumpy Cat plush toy features a soft and cuddly body, designed to resemble the iconic grumpy facial expression of Grumpy Cat. It typically has a round face with downturned eyes and a frowning mouth",
+      "category": "Cat"
+    },
+    {
+      "img": "https://i.ibb.co/dpfzL5M/679cadc1-80b6-45d2-b998-d6213859e251-1-69749f5612626f33c395fbd58fe8b9b7.jpg",
+      "name": "Talking Dog Toy",
+      "seller_name": "Md Shuvo islam",
+      "seller_email": "info@gmail.com",
+      "quantity": 5,
+      "price": 420,
+      "ratings": 4.2,
+      "details": "The talking dog toy is usually made of soft plush material or plastic. It often features a cute and realistic design, representing different dog breeds or a generic dog appearance",
+      "category": "Dog"
+    },
+    {
+      "img": "https://i.ibb.co/v3PqdT6/R.jpg",
+      "name": "ABC 123 Baby Grand Doggie",
+      "seller_name": "Md Shuvo islam",
+      "seller_email": "info@gmail.com",
+      "quantity": 5,
+      "price": 720,
+      "ratings": 3.8,
+      "details": "ABC 123 Baby Grand Doggie toy is usually made of soft plush material or plastic. It often features a cute and realistic design, representing different dog breeds or a generic dog appearance",
+      "category": "Dog"
+    }
+  ]
