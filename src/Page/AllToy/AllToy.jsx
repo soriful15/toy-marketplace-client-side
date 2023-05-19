@@ -5,7 +5,7 @@ const AllToy = () => {
 
 
     const [allToys, setAllToys] = useState([])
-
+    const [search, setSearch] = useState("a")
     useEffect(() => {
         fetch(`http://localhost:5000/allCollection`)
             .then(res => res.json())
@@ -14,14 +14,32 @@ const AllToy = () => {
 
 
 
+    const handleSearch = () => {
+        fetch(`http://localhost:5000/toySearch/${search}`)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setAllToys(data)
+            })
+    }
+
+
     return (
         <>
 
             <h1 className='text-center font-bold text-5xl text-purple-400 mt-7'>All Animal Toys Collection:{allToys.length}</h1>
+            <div className='text-center flex justify-center gap-3 mt-6 '>
 
+                <button onClick={handleSearch} className="btn btn-success">Search Toy</button>
+                <input onChange={(e) => setSearch(e.target.value)} className='border-4 border-solid border-stone-700 px-2 py-2 ' type="text" placeholder='Search' />
 
+            </div>
 
             <div className="overflow-x-auto container mx-auto mt-11">
+
+
+
+
                 <table className="table table-compact w-full">
                     <thead>
                         <tr>
@@ -38,14 +56,14 @@ const AllToy = () => {
 
 
                         {
-                            allToys.map((allToy,index) => <AllToyRow
+                            allToys.map((allToy, index) => <AllToyRow
                                 key={allToy._id}
                                 allToy={allToy}
-                                index={index+1}
+                                index={index + 1}
                             ></AllToyRow>)
                         }
 
-                        
+
 
 
 
