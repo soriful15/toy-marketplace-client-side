@@ -65,7 +65,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <img className='rounded-full w-20' src={logo} alt="" />
-                <h1 className="btn btn-ghost normal-case text-xl text-lime-600 px-2">Animal  <br />toy Kingdom </h1>
+                <h1 className="btn btn-ghost normal-case text-xl text-lime-600 px-2">Animal  <br />toys Kingdom </h1>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
