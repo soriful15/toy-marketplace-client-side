@@ -1,8 +1,8 @@
 import React from 'react';
 
-const MyToyRaw = ({myToy}) => {
-    console.log(myToy)
-    const { name, price,  category ,img, quantity } = myToy
+const MyToyRaw = ({myToy,handleDelete}) => {
+    // console.log(myToy)
+    const {_id, name, price,  category ,img, quantity } = myToy
     return (
         <tr>
            
@@ -26,7 +26,7 @@ const MyToyRaw = ({myToy}) => {
                 <button className="btn btn-info ">Updated</button>
             </th>
             <th>
-                <button className="btn btn-error">Remove</button>
+                <button onClick={()=>handleDelete(_id)} className="btn btn-error">Remove</button>
             </th>
         </tr>
 
