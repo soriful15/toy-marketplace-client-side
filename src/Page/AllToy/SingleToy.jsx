@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import { Rating } from '@smastrom/react-rating'
 const SingleToy = () => {
     const singleToy = useLoaderData()
-    console.log(singleToy)
+    // console.log(singleToy)
     const { name, price, quantity, seller_name, category, details, img, ratings, seller_email } = singleToy
     return (
         <>

@@ -61,17 +61,10 @@ const MyToys = () => {
 
     }
 
-
-
     return (
         <>
 
             <h1 className='text-center font-bold text-5xl text-purple-950 mt-7'>My Animal Toys collection:{myToys.length}</h1>
-
-            {
-                console.log(myToys)
-            }
-
             <div className="overflow-x-auto w-full container mx-auto mt-20">
                 <table className="table w-full">
                     {/* head */}
@@ -81,7 +74,7 @@ const MyToys = () => {
                             <th>Name</th>
                             <th>Category</th>
                             <th>Price</th>
-                            <th>Ratings</th>
+                            <th>Quantity</th>
                             <th>Updated</th>
                             <th>Delete</th>
                         </tr>

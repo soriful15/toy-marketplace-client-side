@@ -14,6 +14,7 @@ import Register from "../Page/Register/Register";
 import Blog from "../Page/Blog/Blog";
 import SingleToy from "../Page/AllToy/SingleToy";
 import CategoryDetails from "../Page/category/CategoryDetails";
+import UpdatedToy from "../Page/UpdatedToy/UpdatedToy";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,11 @@ const router = createBrowserRouter([
       {
         path: '/categoryDetails/:id',
         element: <PrivateRoute><CategoryDetails></CategoryDetails></PrivateRoute>,
+        loader: ({params})=> fetch(`http://localhost:5000/allCollection/${params.id}`)
+      },
+      {
+        path: 'updated/:id',
+        element: <UpdatedToy></UpdatedToy>,
         loader: ({params})=> fetch(`http://localhost:5000/allCollection/${params.id}`)
       },
 
