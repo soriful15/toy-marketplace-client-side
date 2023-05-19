@@ -17,7 +17,7 @@ const AllToy = () => {
     return (
         <>
 
-            <h1 className='text-center font-bold text-5xl text-purple-400 mt-7'>All Animal Toys Collection</h1>
+            <h1 className='text-center font-bold text-5xl text-purple-400 mt-7'>All Animal Toys Collection:{allToys.length}</h1>
 
 
 
