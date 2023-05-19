@@ -10,8 +10,8 @@ const CategoryDetails = () => {
             <div className='container mx-auto mt-16 max-w-7xl'>
 
 
-                <div className="card lg:card-side bg-base-100 shadow-xl">
-                    <figure><img src={img} className='' alt="Album" /></figure>
+                <div className="card lg:card-side bg-base-100 shadow-xl lg:max-w-7xl lg:max-h-96 ">
+                    <figure><img src={img} className='w-full h-full' alt="Album" /></figure>
                     <div className="card-body">
                         <h2 className="card-title font-bold">Name:{seller_name}</h2>
                         <p className='text-sm text-amber-800'>Email:{seller_email}</p>

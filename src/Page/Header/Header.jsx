@@ -16,7 +16,7 @@ const Header = () => {
     }
 
     return (
-        <div className="navbar bg-red-200 mx-auto lg:px-28 py-10  mt-6">
+        <div className="navbar bg-indigo-100 mx-auto lg:px-28 py-10  mt-6">
 
 
 

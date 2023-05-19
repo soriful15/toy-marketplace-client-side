@@ -3,7 +3,7 @@ import React from 'react';
 import banner1 from '../../../assets/banner/banner-1.jpg'
 import banner2 from '../../../assets/banner/banner-2.jpg'
 import banner3 from '../../../assets/banner/banner-3.jpg'
-import banner4 from '../../../assets/banner/banner-4.jpg'
+// import banner4 from '../../../assets/banner/banner-4.jpg'
 const Banner = () => {
   return (
     <div className="carousel w-full h-[600px] mt-14 lg:container mx-auto ">
@@ -20,7 +20,7 @@ const Banner = () => {
           </div>
         </div>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide4" className="btn btn-outline">❮</a>
+          <a href="#slide3" className="btn btn-outline">❮</a>
           <a href="#slide2" className="btn btn-outline ">❯</a>
         </div>
       </div>
@@ -55,10 +55,10 @@ const Banner = () => {
         </div>
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
           <a href="#slide2" className="btn btn-outline">❮</a>
-          <a href="#slide4" className="btn btn-outline">❯</a>
+          <a href="#slide1" className="btn btn-outline">❯</a>
         </div>
       </div>
-      <div id="slide4" className="carousel-item relative w-full">
+      {/* <div id="slide4" className="carousel-item relative w-full">
         <img src={banner4} className="w-full rounded-2xl" />
         <div className="absolute flex items-center h-full  gap-5 transform  left-0  top-0   rounded-2xl">
           <div className='space-y-7 md:w-1/2 md:pl-12 pl-5 '>
@@ -74,7 +74,7 @@ const Banner = () => {
           <a href="#slide3" className="btn btn-outline">❮</a>
           <a href="#slide1" className="btn btn-outline">❯</a>
         </div>
-      </div>
+      </div> */}
     </div>
 
 
