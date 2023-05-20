@@ -11,6 +11,17 @@
       "category": "Horse"
     },
     {
+      "img": "https://i.ibb.co/4MKJ9Cs/horse.webp",
+      "name": "Rocking Horse",
+      "seller_name": "Md Shuvo islam",
+      "seller_email": "info@gmail.com",
+      "quantity": 8,
+      "price": 520,
+      "ratings": 4,
+      "details": " A classic toy horse that is mounted on curved rockers or springs. Children can sit on it and rock back and forth, simulating the motion of riding a horse",
+      "category": "Horse"
+    },
+    {
       "img": "https://i.ibb.co/cXprGTY/Lovely-Kneeling-Plush-Unicorn-Toy-Soft-Cute-Stuffed-Animal-Toys-Popular-Plush-Doll-Kid-Playmate-Baby.jpg",
       "name": "Unicorn plush horse",
       "seller_name": "Md Shuvo islam",
@@ -66,6 +77,17 @@
       "category": "Cat"
     },
     {
+      "img": "https://i.ibb.co/5x1G7rP/cat.jpg",
+      "name": "Cat Tunnel",
+      "seller_name": "Md Shuvo islam",
+      "seller_email": "info@gmail.com",
+      "quantity": 6,
+      "price": 520,
+      "ratings": 4,
+      "details": "A collapsible tunnel made of fabric or other materials that cats can crawl through, hide in, and play with. It offers an adventurous and fun environment for cats to explore..",
+      "category": "Cat"
+    },
+    {
       "img": "https://i.ibb.co/hmWJYmc/R.jpg",
       "name": "Fluffy Grumpy Cat",
       "seller_name": "Md Shuvo islam",
@@ -99,3 +121,6 @@
       "category": "Dog"
     }
   ]
+
+
+ 

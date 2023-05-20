@@ -5,8 +5,6 @@ import Banner from '../Banner/Banner';
 import ShopByCategory from '../../category/ShopByCategory';
 import CustomerSay from '../CustomerSay/CustomerSay';
 import SpecialOffers from '../SpecialOffer/SpecialOffers';
-
-
 const Home = () => {
     return (
         <div>

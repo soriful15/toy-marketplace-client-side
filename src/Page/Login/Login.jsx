@@ -27,7 +27,7 @@ const Login = () => {
             .then((result) => {
                 const loggedUser = result.user
                 setError('')
-                setSuccess(toast("User has created successfully"))
+                setSuccess(toast("Login successfully"))
                 form.reset()
                 console.log(loggedUser);
                 navigate(from, { replace: true })
