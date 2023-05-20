@@ -5,10 +5,6 @@ import { FaPhone, FaMapMarkerAlt, } from 'react-icons/fa';
 const Footer = () => {
     return (
         <>
-
-
-
-
             <footer className="footer p-10 bg-lime-100  text-base-content mt-10">
                 <div>
                     <img src={logo} className='rounded-full w-24' alt="" />

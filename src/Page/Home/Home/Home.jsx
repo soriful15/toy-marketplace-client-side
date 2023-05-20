@@ -3,6 +3,8 @@ import Gallery from '../Gallery/Gallery';
 import Banner from '../Banner/Banner';
 
 import ShopByCategory from '../../category/ShopByCategory';
+import CustomerSay from '../CustomerSay/CustomerSay';
+
 
 const Home = () => {
     return (
@@ -16,7 +18,10 @@ const Home = () => {
                 <Gallery></Gallery>
             </section>
             <section>
-              <ShopByCategory></ShopByCategory>
+                <ShopByCategory></ShopByCategory>
+            </section>
+            <section>
+             <CustomerSay></CustomerSay>
             </section>
         </div>
     );
