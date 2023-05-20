@@ -5,7 +5,9 @@ import { toast } from 'react-toastify';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { FaGoogle } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import useTitle from '../../hooks/UseTitle';
 const Login = () => {
+    useTitle('Login')
     const { singIn, googleProvider } = useContext(AuthContext)
 
     const [error, setError] = useState('')

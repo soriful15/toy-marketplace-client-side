@@ -4,7 +4,9 @@ import register from '../../assets/112454-form-registration.json'
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../Provider/AuthProvider';
+import useTitle from '../../hooks/UseTitle';
 const Register = () => {
+    useTitle('Register')
     const { createUser, updateUserProfile } = useContext(AuthContext)
     const [success, setSuccess] = useState('')
     const [error, setError] = useState('')

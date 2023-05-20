@@ -3,8 +3,9 @@ import { useLoaderData } from 'react-router-dom';
 
 import { useForm } from "react-hook-form";
 import Swal from 'sweetalert2'
+import useTitle from '../../hooks/UseTitle';
 const UpdatedToy = () => {
-
+useTitle('Updated Toys')
     const updated = useLoaderData()
     console.log(updated)
     const { _id, name, price, quantity, seller_name, category, details, img, ratings, seller_email } = updated

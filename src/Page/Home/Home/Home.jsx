@@ -5,7 +5,9 @@ import Banner from '../Banner/Banner';
 import ShopByCategory from '../../category/ShopByCategory';
 import CustomerSay from '../CustomerSay/CustomerSay';
 import SpecialOffers from '../SpecialOffer/SpecialOffers';
+import useTitle from '../../../hooks/UseTitle';
 const Home = () => {
+    useTitle('Home')
     return (
         <div>
 

@@ -2,8 +2,9 @@ import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
 import MyToyRaw from './MyToyRaw';
 import Swal from 'sweetalert2'
+import useTitle from '../../hooks/UseTitle';
 const MyToys = () => {
-
+useTitle('My Toys')
     const [myToys, setMyToys] = useState([])
     // const [sort, setSort] = useState("a");
 
