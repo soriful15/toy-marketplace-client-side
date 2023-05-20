@@ -20,16 +20,19 @@ const ShopByCategory = () => {
         <div className='container mx-auto mt-10'>
             <h1 className='text-center text-5xl text-teal-800'> Shop by category</h1>
 
-            <Tabs className='text-center mt-6'>
+            <Tabs className='text-center mt-6 lg:border-4 lg:border-blue-300  lg:py-5'>
                 <TabList className='text-2xl text-purple-900'>
                     <Tab>Horse</Tab>
                     <Tab>Dinosaur</Tab>
                     <Tab>Cat</Tab>
                 </TabList>
                 <TabPanel className='mt-10'>
-                    <div className='md:flex  md:items-center md:justify-center gap-6'>
+                    <div className='md:flex  md:flex-wrap  md:items-center md:justify-center gap-6'>
+                   
+                  
                         {category
-                            .filter(toy => toy.category === 'Horse').slice(0, 2)
+                            .filter(toy => toy.category === 'Horse')
+                           
                             .map((toy, index) => (
                                 <div className="card w-96 bg-base-100 shadow-xl border-4 border-solid border-gray-200" key={index}>
                                     <figure className="px-10 pt-10">
@@ -51,9 +54,9 @@ const ShopByCategory = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <div className='md:flex  md:items-center md:justify-center gap-6'>
+                    <div className='md:flex md:flex-wrap  md:items-center md:justify-center gap-6   '>
                         {category
-                            .filter(toy => toy.category === 'Dinosaur').slice(0, 2)
+                            .filter(toy => toy.category === 'Dinosaur')
                             .map((toy, index) => (
                                 <div className="card w-96 bg-base-100 shadow-xl border-4 border-solid border-gray-200" key={index}>
                                     <figure className="px-10 pt-10">
@@ -76,9 +79,9 @@ const ShopByCategory = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <div className='md:flex  md:items-center md:justify-center gap-6'>
+                    <div className='md:flex md:flex-wrap md:items-center md:justify-center gap-6'>
                         {category
-                            .filter(toy => toy.category === 'Cat').slice(0, 2)
+                            .filter(toy => toy.category === 'Cat')
                             .map((toy, index) => (
                                 <div className="card w-96 bg-base-100 shadow-xl border-4 border-solid border-gray-200" key={index}>
                                     <figure className="px-10 pt-10">

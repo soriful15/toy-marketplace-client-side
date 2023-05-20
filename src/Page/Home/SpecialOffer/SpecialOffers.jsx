@@ -28,7 +28,7 @@ const handleAddBuy=()=>{
                 <div className="card-body bg-green-200">
                     <h2 className="card-title">Giant Teddy Bear</h2>
                     <p className='font-normal text-black'>Price:$200</p>
-                    <p className='font-normal text-black'>Quantity:600</p>
+                    <p className='font-normal text-black'>Quantity:6</p>
                     <div className="card-actions">
                         <button onClick={handleAddBuy} disabled={buy} className="btn btn-outline btn-secondary w-full">Add to Buy Now</button>
                     </div>
@@ -41,7 +41,7 @@ const handleAddBuy=()=>{
                 <div className="card-body bg-green-200">
                     <h2 className="card-title">Teddy Bear with Bow</h2>
                     <p className='font-normal text-black'>Price:$300</p>
-                    <p className='font-normal text-black'>Quantity:700</p>
+                    <p className='font-normal text-black'>Quantity:7</p>
                     <div className="card-actions">
                         <button onClick={handleAddBuy} disabled={buy} className="btn btn-outline btn-secondary w-full">Add to Buy Now</button>
                     </div>
@@ -57,7 +57,7 @@ const handleAddBuy=()=>{
                 <div className="card-body bg-green-200">
                     <h2 className="card-title">Triceratops Dinosaur Toy</h2>
                     <p className='font-normal text-black'>Price:$350</p>
-                    <p className='font-normal text-black'>Quantity:700</p>
+                    <p className='font-normal text-black'>Quantity:7</p>
                     <div className="card-actions">
                         <button onClick={handleAddBuy} disabled={buy} className="btn btn-outline btn-secondary w-full">Add to Buy Now</button>
                     </div>
@@ -70,7 +70,7 @@ const handleAddBuy=()=>{
                 <div className="card-body bg-green-200">
                     <h2 className="card-title">Stegosaurus  Dinosaur Toy</h2>
                     <p className='font-normal text-black'>Price:$250</p>
-                    <p className='font-normal text-black'>Quantity:600</p>
+                    <p className='font-normal text-black'>Quantity:6</p>
                     <div className="card-actions">
                         <button onClick={handleAddBuy} disabled={buy} className="btn btn-outline btn-secondary w-full">Add to Buy Now</button>
                     </div>
@@ -82,7 +82,7 @@ const handleAddBuy=()=>{
                 <div className="card-body bg-green-200">
                     <h2 className="card-title">Squeaky Dog Toy</h2>
                     <p className='font-normal text-black'>Price:$200</p>
-                    <p className='font-normal text-black'>Quantity:800</p>
+                    <p className='font-normal text-black'>Quantity:8</p>
                     <div className="card-actions">
                         <button onClick={handleAddBuy} disabled={buy} className="btn btn-outline btn-secondary w-full">Add to Buy Now</button>
                     </div>
@@ -96,7 +96,7 @@ const handleAddBuy=()=>{
                 <div className="card-body bg-green-200">
                     <h2 className="card-title">Rope Dog Toy</h2>
                     <p className='font-normal text-black'>Price:$300</p>
-                    <p className='font-normal text-black'>Quantity:700</p>
+                    <p className='font-normal text-black'>Quantity:7</p>
                     <div className="card-actions">
                         <button onClick={handleAddBuy} disabled={buy} className="btn btn-outline btn-secondary w-full">Add to Buy Now</button>
                     </div>
