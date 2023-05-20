@@ -9,9 +9,10 @@ const AddAToys = () => {
     // eslint-disable-next-line no-unused-vars
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
-        console.log(data);
+        data.price=parseFloat(data.price)
+        console.log(data.price);
 
-        fetch(`http://localhost:5000/addToy`, {
+        fetch(`https://toy-marketplace-server-sigma-two.vercel.app/addToy`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

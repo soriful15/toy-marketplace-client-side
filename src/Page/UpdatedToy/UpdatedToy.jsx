@@ -13,10 +13,11 @@ useTitle('Updated Toys')
     // eslint-disable-next-line no-unused-vars
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
-        console.log(data);
+        data.price=parseFloat(data.price)
+        console.log(data.price);
 
 
-        fetch(`http://localhost:5000/allCollection/${_id}`, {
+        fetch(`https://toy-marketplace-server-sigma-two.vercel.app/allCollection/${_id}`, {
 
             method: 'PUT',
             headers: {

@@ -4,27 +4,22 @@ import MyToyRaw from './MyToyRaw';
 import Swal from 'sweetalert2'
 import useTitle from '../../hooks/UseTitle';
 const MyToys = () => {
-useTitle('My Toys')
+    useTitle('My Toys')
     const [myToys, setMyToys] = useState([])
-    // const [sort, setSort] = useState("a");
-
-    // const [sortOrder, setSortOrder] = useState('asc'); // or 'desc'
-    // const [sortDirection, setSortDirection] = useState(1);
-
-
+    const [sortOrder, setSortOrder] = useState('');
 
     const { user } = useContext(AuthContext)
-    const url = `http://localhost:5000/myToys/${user?.email}`
+    const url = `https://toy-marketplace-server-sigma-two.vercel.app/myToys/${user?.email}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
             .then(data => setMyToys(data))
+    }, [url, user])
 
 
-    }, [url])
     const handleDelete = (_id) => {
         console.log(_id)
-        fetch(`http://localhost:5000/delete/${_id}`, {
+        fetch(`https://toy-marketplace-server-sigma-two.vercel.app/delete/${_id}`, {
             method: 'DELETE',
 
         })
@@ -42,8 +37,6 @@ useTitle('My Toys')
                         confirmButtonText: 'Yes, delete it!'
                     }).then((result) => {
                         if (result.isConfirmed) {
-                            // console.log('Deleted Confirmed')
-
                             Swal.fire(
                                 'Deleted!',
                                 'Your file has been deleted.',
@@ -51,11 +44,7 @@ useTitle('My Toys')
                             )
                         }
                     })
-                   /*  Swal.fire(
-                        'Deleted!',
-                        'Your file has been deleted.',
-                        'success'
-                    ) */
+
                 }
 
 
@@ -64,17 +53,23 @@ useTitle('My Toys')
         setMyToys(remaining)
     }
 
-    // const handleSort = () => {
-    //     const newSortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
-    //     const newSortDirection = sortOrder === 'asc' ? -1 : 1;
-    
-    //     setSortOrder(newSortOrder);
-    //     setSortDirection(newSortDirection);
-    
-    //     // Sort the toy data based on the new sort order and direction
-    //     const sortedToys = myToys.sort((a, b) => (a.price - b.price) * newSortDirection);
-    //     setMyToys([...sortedToys]);
-    //   };
+
+
+
+    useEffect(() => {
+        fetch(`https://toy-marketplace-server-sigma-two.vercel.app/myToys?sort=${sortOrder}`)
+            .then(res => res.json())
+            .then(data => setMyToys(data))
+    }, [sortOrder])
+
+
+
+
+
+    const handleSortOrderChange = (e) => {
+        console.log(e.target.value)
+        setSortOrder(e.target.value)
+    };
 
 
 
@@ -92,7 +87,21 @@ useTitle('My Toys')
             <div className='flex gap-1 justify-center mt-2'>
 
                 {/* <button onClick={handleSort} className="btn btn-outline btn-primary">Low Price</button>
-                <button className="btn btn-outline">High Price</button> */}
+                <button onClick={handleSort} className="btn btn-outline">High Price</button> */}
+
+
+                <select
+                    value={sortOrder}
+                    onChange={handleSortOrderChange}
+                    className="select select-primary  max-w-xs"
+                >
+                    <option value="" disabled>Best Match</option>
+                    <option value="lowest">Price(Low to high)</option>
+                    <option value="highest">Price(High to low)</option>
+                </select>
+
+
+
             </div>
 
             <div className="overflow-x-auto w-full container mx-auto mt-20">
