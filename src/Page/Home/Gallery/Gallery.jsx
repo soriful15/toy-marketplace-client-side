@@ -43,7 +43,7 @@ const Gallery = () => {
         <>
 
             <div className='container mx-auto mt-10 mb-10  '>
-                <h1 className='text-center text-5xl font-bold text-blue-500'>Animal Toys Collection</h1>
+                <h1 className='text-center md:text-5xl text-xl font-bold text-blue-500'>Animal Toys Collection</h1>
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-7 mt-10 overflow-hidden' data-aos="fade-up"
                     data-aos-offset="200"
                     data-aos-delay="50"

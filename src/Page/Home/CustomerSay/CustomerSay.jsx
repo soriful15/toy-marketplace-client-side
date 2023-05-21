@@ -7,7 +7,7 @@ import customer3 from '../../../assets/customer pic/cutomer-3.jpg'
 const CustomerSay = () => {
     return (
         <>
-            <h1 className='mx-auto container text-3xl mt-20'>What Customer Are Saying</h1>
+            <h1 className='mx-auto container text-teal-300 text-3xl mt-20'>What Customer Are Saying</h1>
 
             <div className='grid lg:grid-cols-3  md:grid-cols-2 gap-4 mx-auto container mt-10'>
 
@@ -35,7 +35,7 @@ const CustomerSay = () => {
 
                         </p>
 
-                        <p className=' flex justify-center text-2xl gap-3 mt-6'><FaFacebook></FaFacebook>    <FaInstagram></FaInstagram>  <FaTwitter></FaTwitter> <FaYoutube></FaYoutube> </p>
+                        <p className=' flex justify-center md:text-2xl gap-3 mt-6'><FaFacebook></FaFacebook>    <FaInstagram></FaInstagram>  <FaTwitter></FaTwitter> <FaYoutube></FaYoutube> </p>
                     </div>
                 </div>
 

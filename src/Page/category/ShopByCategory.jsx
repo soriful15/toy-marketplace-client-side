@@ -18,7 +18,7 @@ const ShopByCategory = () => {
 
     return (
         <div className='container mx-auto mt-10'>
-            <h1 className='text-center text-5xl text-teal-800'> Shop by category</h1>
+            <h1 className='text-center md:text-5xl text-2xl text-teal-800'> Shop by category</h1>
 
             <Tabs className='text-center mt-6 lg:border-4 lg:border-blue-300  lg:py-5'>
                 <TabList className='text-2xl text-purple-900'>
