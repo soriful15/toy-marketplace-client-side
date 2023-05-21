@@ -27,7 +27,7 @@ const ShopByCategory = () => {
                     <Tab>Cat</Tab>
                 </TabList>
                 <TabPanel className='mt-10'>
-                    <div className='lg:flex  lg:flex-wrap  md:items-center  md:justify-center gap-6 grid md:grid-cols-2'>
+                    <div className='lg:flex  lg:flex-wrap  lg:items-center  lg:justify-center gap-6 grid md:grid-cols-2'>
                     {/* <div className= 'grid grid-cols-2 gap-6'> */}
                    
                   
@@ -55,7 +55,7 @@ const ShopByCategory = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <div className='md:flex md:flex-wrap  md:items-center md:justify-center gap-6 grid md:grid-cols-2   '>
+                    <div className='lg:flex  lg:flex-wrap  lg:items-center  lg:justify-center gap-6 grid md:grid-cols-2   '>
                         {category
                             .filter(toy => toy.category === 'Dinosaur')
                             .map((toy, index) => (
@@ -80,7 +80,7 @@ const ShopByCategory = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <div className='md:flex md:flex-wrap md:items-center md:justify-center gap-6 grid md:grid-cols-2'>
+                    <div className='lg:flex  lg:flex-wrap  lg:items-center  lg:justify-center gap-6 grid md:grid-cols-2'>
                         {category
                             .filter(toy => toy.category === 'Cat')
                             .map((toy, index) => (
