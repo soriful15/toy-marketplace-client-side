@@ -10,7 +10,6 @@ const MyToys = () => {
 
     const { user } = useContext(AuthContext)
   
-    // const url = `https://toy-marketplace-server-sigma-two.vercel.app/myToys/${user?.email}`
     const url = `  https://toy-marketplace-server-sigma-two.vercel.app/myToys?email=${user?.email}&sort=${sortOrder}`
     useEffect(() => {
         fetch(url)
@@ -54,17 +53,6 @@ const MyToys = () => {
         const remaining = myToys.filter(toy => toy._id !== _id)
         setMyToys(remaining)
     }
-
-
-
-
-    // useEffect(() => {
-    //     fetch(`https://toy-marketplace-server-sigma-two.vercel.app/myToys?sort=${sortOrder}`)
-    //         .then(res => res.json())
-    //         .then(data => setMyToys(data))
-    // }, [sortOrder])
-
-
 
 
 
