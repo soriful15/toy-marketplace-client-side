@@ -8,7 +8,7 @@ useTitle('All Toy')
     const [allToys, setAllToys] = useState([])
     const [search, setSearch] = useState("a")
     useEffect(() => {
-        fetch(`https://toy-marketplace-server-sigma-two.vercel.app/allCollection`)
+        fetch(`http://localhost:5000/allCollection`)
             .then(res => res.json())
             .then(data => setAllToys(data))
     }, [])
@@ -16,7 +16,7 @@ useTitle('All Toy')
 
 
     const handleSearch = () => {
-        fetch(`https://toy-marketplace-server-sigma-two.vercel.app/toySearch/${search}`)
+        fetch(`http://localhost:5000/toySearch/${search}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)

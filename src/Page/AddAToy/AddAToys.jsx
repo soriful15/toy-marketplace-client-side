@@ -12,7 +12,7 @@ const AddAToys = () => {
         data.price=parseFloat(data.price)
         console.log(data.price);
 
-        fetch(`https://toy-marketplace-server-sigma-two.vercel.app/addToy`, {
+        fetch(`http://localhost:5000/addToy`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
