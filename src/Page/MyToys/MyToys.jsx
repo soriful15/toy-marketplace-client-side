@@ -10,8 +10,8 @@ const MyToys = () => {
 
     const { user } = useContext(AuthContext)
   
-    // const url = `http://localhost:5000/myToys/${user?.email}`
-    const url = `  http://localhost:5000/myToys?email=${user?.email}&sort=${sortOrder}`
+    // const url = `https://toy-marketplace-server-sigma-two.vercel.app/myToys/${user?.email}`
+    const url = `  https://toy-marketplace-server-sigma-two.vercel.app/myToys?email=${user?.email}&sort=${sortOrder}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -21,7 +21,7 @@ const MyToys = () => {
 
     const handleDelete = (_id) => {
         console.log(_id)
-        fetch(`http://localhost:5000/delete/${_id}`, {
+        fetch(`https://toy-marketplace-server-sigma-two.vercel.app/delete/${_id}`, {
             method: 'DELETE',
 
         })
@@ -59,7 +59,7 @@ const MyToys = () => {
 
 
     // useEffect(() => {
-    //     fetch(`http://localhost:5000/myToys?sort=${sortOrder}`)
+    //     fetch(`https://toy-marketplace-server-sigma-two.vercel.app/myToys?sort=${sortOrder}`)
     //         .then(res => res.json())
     //         .then(data => setMyToys(data))
     // }, [sortOrder])
