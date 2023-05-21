@@ -55,51 +55,51 @@ const Gallery = () => {
 
 
 
-                    <div className="card w-96 bg-base-100 shadow-xl border-2 ">
+                    <div className="card w-96  bg-base-100 shadow-xl border-2 mx-auto">
                         <figure><img src={gallary1} alt="Shoes" /></figure>
 
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl border-2">
+                    <div className="card w-96 bg-base-100 shadow-xl border-2 mx-auto">
                         <figure><img src={gallary2} alt="Shoes" /></figure>
 
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl border-2">
+                    <div className="card w-96 bg-base-100 shadow-xl border-2 mx-auto">
                         <figure><img src={gallary3} alt="Shoes" /></figure>
 
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl border-2">
+                    <div className="card w-96 bg-base-100 shadow-xl border-2 mx-auto">
                         <figure><img src={gallary4} alt="Shoes" className='' /></figure>
 
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl border-2">
+                    <div className="card w-96 bg-base-100 shadow-xl border-2 mx-auto">
                         <figure><img src={gallary5} alt="Shoes" className='' /></figure>
 
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl border-2">
+                    <div className="card w-96 bg-base-100 shadow-xl border-2 mx-auto">
                         <figure><img src={gallary6} alt="Shoes" /></figure>
 
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl border-2">
+                    <div className="card w-96 bg-base-100 shadow-xl border-2 mx-auto">
                         <figure><img src={gallary7} alt="Shoes" /></figure>
 
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl border-2">
+                    <div className="card w-96 bg-base-100 shadow-xl border-2 mx-auto">
                         <figure><img src={gallary8} alt="Shoes" /></figure>
 
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl border-2">
+                    <div className="card w-96 bg-base-100 shadow-xl border-2 mx-auto">
                         <figure><img src={gallary9} alt="Shoes" /></figure>
 
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl border-2">
+                    <div className="card w-96 bg-base-100 shadow-xl border-2 mx-auto">
                         <figure><img src={gallary10} alt="Shoes" /></figure>
 
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl border-2">
+                    <div className="card w-96 bg-base-100 shadow-xl border-2 mx-auto">
                         <figure><img src={gallary11} alt="Shoes" /></figure>
 
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl border-2">
+                    <div className="card w-96 bg-base-100 shadow-xl border-2 mx-auto">
                         <figure><img src={gallary12} alt="Shoes" /></figure>
 
                     </div>

@@ -48,7 +48,7 @@ const handleAddBuy6=()=>{
 
 
 
-         <div className="card card-compact w-96 bg-base-100 shadow-xl">
+         <div className="card card-compact w-96 bg-base-100 mx-auto shadow-xl">
                 <figure><img src={teddybear} alt="Shoes" className='h-64 w-full' /></figure>
                 <div className="card-body bg-green-200">
                     <h2 className="card-title">Giant Teddy Bear</h2>
@@ -61,7 +61,7 @@ const handleAddBuy6=()=>{
             </div>
 
 
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+            <div className="card card-compact w-96 bg-base-100 mx-auto shadow-xl">
                 <figure><img src={teddybear2} alt="Shoes" className='h-64 w-full' /></figure>
                 <div className="card-body bg-green-200">
                     <h2 className="card-title">Teddy Bear with Bow</h2>
@@ -77,7 +77,7 @@ const handleAddBuy6=()=>{
 
 
 
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+            <div className="card card-compact w-96 bg-base-100 mx-auto shadow-xl">
                 <figure><img src={dinosaur} alt="Shoes" className='h-64 w-full' /></figure>
                 <div className="card-body bg-green-200">
                     <h2 className="card-title">Triceratops Dinosaur Toy</h2>
@@ -90,7 +90,7 @@ const handleAddBuy6=()=>{
             </div>
 
 
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+            <div className="card card-compact w-96 bg-base-100 mx-auto shadow-xl">
                 <figure><img src={dinosaur2} alt="Shoes" className='h-64 w-full' /></figure>
                 <div className="card-body bg-green-200">
                     <h2 className="card-title">Stegosaurus  Dinosaur Toy</h2>
@@ -102,7 +102,7 @@ const handleAddBuy6=()=>{
                 </div>
             </div>
 
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+            <div className="card card-compact w-96 bg-base-100 mx-auto shadow-xl">
                 <figure><img src={dog} alt="Shoes" className='h-64 w-full' /></figure>
                 <div className="card-body bg-green-200">
                     <h2 className="card-title">Squeaky Dog Toy</h2>
@@ -116,7 +116,7 @@ const handleAddBuy6=()=>{
 
 
 
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+            <div className="card card-compact w-96 bg-base-100 mx-auto shadow-xl">
                 <figure><img src={dog2} alt="Shoes" className='h-64 w-full' /></figure>
                 <div className="card-body bg-green-200">
                     <h2 className="card-title">Rope Dog Toy</h2>

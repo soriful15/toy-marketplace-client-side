@@ -27,14 +27,15 @@ const ShopByCategory = () => {
                     <Tab>Cat</Tab>
                 </TabList>
                 <TabPanel className='mt-10'>
-                    <div className='md:flex  md:flex-wrap  md:items-center md:justify-center gap-6'>
+                    <div className='lg:flex  lg:flex-wrap  md:items-center  md:justify-center gap-6 grid md:grid-cols-2'>
+                    {/* <div className= 'grid grid-cols-2 gap-6'> */}
                    
                   
                         {category
                             .filter(toy => toy.category === 'Horse')
                            
                             .map((toy, index) => (
-                                <div className="card w-96 bg-base-100 shadow-xl border-4 border-solid border-gray-200" key={index}>
+                                <div className="w-96  bg-base-100 shadow-xl border-4 border-solid mx-auto border-gray-200" key={index}>
                                     <figure className="px-10 pt-10">
                                         <img src={toy.img} alt={toy.name} className="rounded-xl w-96 h-60" />
                                     </figure>
@@ -54,11 +55,11 @@ const ShopByCategory = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <div className='md:flex md:flex-wrap  md:items-center md:justify-center gap-6   '>
+                    <div className='md:flex md:flex-wrap  md:items-center md:justify-center gap-6 grid md:grid-cols-2   '>
                         {category
                             .filter(toy => toy.category === 'Dinosaur')
                             .map((toy, index) => (
-                                <div className="card w-96 bg-base-100 shadow-xl border-4 border-solid border-gray-200" key={index}>
+                                <div className="card w-96 bg-base-100 shadow-xl border-4 border-solid mx-auto border-gray-200" key={index}>
                                     <figure className="px-10 pt-10">
                                         <img src={toy.img} alt={toy.name} className="rounded-xl w-96 h-60" />
                                     </figure>
@@ -79,11 +80,11 @@ const ShopByCategory = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-                    <div className='md:flex md:flex-wrap md:items-center md:justify-center gap-6'>
+                    <div className='md:flex md:flex-wrap md:items-center md:justify-center gap-6 grid md:grid-cols-2'>
                         {category
                             .filter(toy => toy.category === 'Cat')
                             .map((toy, index) => (
-                                <div className="card w-96 bg-base-100 shadow-xl border-4 border-solid border-gray-200" key={index}>
+                                <div className="card w-96 bg-base-100 shadow-xl border-4 border-solid mx-auto border-gray-200" key={index}>
                                     <figure className="px-10 pt-10">
                                         <img src={toy.img} alt={toy.name} className="rounded-xl w-96 h-60" />
                                     </figure>

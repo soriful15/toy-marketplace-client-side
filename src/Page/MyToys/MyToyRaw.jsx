@@ -21,7 +21,7 @@ const MyToyRaw = ({myToy,handleDelete}) => {
               {category}
             
             </td>
-            <td className='text-yellow-600'>{price}</td>
+            <td className='text-yellow-600'>{parseFloat(price)}</td>
             <td className='text-blue-600'>{quantity}</td>
             <th>
                 <Link to={`/updated/${_id}`} className="btn btn-info ">Updated</Link>

@@ -13,7 +13,7 @@ const CustomerSay = () => {
 
 
 
-                <div className="card w-96 bg-white border-2 border-zinc-100 shadow-xl">
+                <div className="card w-96 bg-white border-2 mx-auto border-zinc-100 shadow-xl">
                     <div className="card-body">
                         <div className='flex gap-3'>
                             <img src={customer1} className='w-16 rounded-full' alt="" />
@@ -41,7 +41,7 @@ const CustomerSay = () => {
 
 
 
-                <div className="card w-96 bg-white border-2 border-zinc-100 shadow-xl">
+                <div className="card w-96 bg-white border-2 mx-auto border-zinc-100 shadow-xl">
                     <div className="card-body">
                         <div className='flex gap-3'>
                             <img src={customer2} className='w-16 rounded-full h-10' alt="" />
@@ -70,7 +70,7 @@ const CustomerSay = () => {
 
 
 
-                <div className="card w-96 bg-white border-2 border-zinc-100 shadow-xl">
+                <div className="card w-96 bg-white border-2 mx-auto border-zinc-100 shadow-xl">
                     <div className="card-body">
                         <div className='flex gap-3'>
                             <img src={customer3} className='w-16 rounded-full h-10' alt="" />
