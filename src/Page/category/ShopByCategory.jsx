@@ -27,10 +27,7 @@ const ShopByCategory = () => {
                     <Tab>Cat</Tab>
                 </TabList>
                 <TabPanel className='mt-10'>
-                    <div className='lg:flex  lg:flex-wrap  lg:items-center  lg:justify-center gap-6 grid md:grid-cols-2'>
-                    {/* <div className= 'grid grid-cols-2 gap-6'> */}
-                   
-                  
+                    <div className='lg:flex  lg:flex-wrap  lg:items-center  lg:justify-center gap-6 md:grid md:grid-cols-2'>
                         {category
                             .filter(toy => toy.category === 'Horse')
                            
