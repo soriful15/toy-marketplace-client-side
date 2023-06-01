@@ -10,7 +10,7 @@ const MyToys = () => {
 
     const { user } = useContext(AuthContext)
 
-    const url = `  https://toy-marketplace-server-side-azure.vercel.app /myToys?email=${user?.email}&sort=${sortOrder}`
+    const url = `https://toy-marketplace-server-side-azure.vercel.app/myToys?email=${user?.email}&sort=${sortOrder}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())

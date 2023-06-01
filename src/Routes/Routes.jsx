@@ -54,17 +54,17 @@ const router = createBrowserRouter([
       {
         path: '/singleToys/:id',
         element: <PrivateRoute><SingleToy></SingleToy></PrivateRoute>,
-        loader: ({params})=> fetch(`https://toy-marketplace-server-side-azure.vercel.app /allCollection/${params.id}`)
+        loader: ({params})=> fetch(`https://toy-marketplace-server-side-azure.vercel.app/allCollection/${params.id}`)
       },
       {
         path: '/categoryDetails/:id',
         element: <PrivateRoute><CategoryDetails></CategoryDetails></PrivateRoute>,
-        loader: ({params})=> fetch(`https://toy-marketplace-server-side-azure.vercel.app /allCollection/${params.id}`)
+        loader: ({params})=> fetch(`https://toy-marketplace-server-side-azure.vercel.app/allCollection/${params.id}`)
       },
       {
         path: 'updated/:id',
         element: <UpdatedToy></UpdatedToy>,
-        loader: ({params})=> fetch(`https://toy-marketplace-server-side-azure.vercel.app /allCollection/${params.id}`)
+        loader: ({params})=> fetch(`https://toy-marketplace-server-side-azure.vercel.app/allCollection/${params.id}`)
       },
 
     ]
