@@ -9,7 +9,7 @@ const MyToys = () => {
     const [sortOrder, setSortOrder] = useState('');
 
     const { user } = useContext(AuthContext)
-  
+
     const url = `  https://toy-marketplace-server-sigma-two.vercel.app/myToys?email=${user?.email}&sort=${sortOrder}`
     useEffect(() => {
         fetch(url)
@@ -24,6 +24,10 @@ const MyToys = () => {
             method: 'DELETE',
 
         })
+
+
+
+        
             .then(res => res.json())
             .then(data => {
                 console.log(data)
