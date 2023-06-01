@@ -64,7 +64,7 @@ const MyToys = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://toy-marketplace-server-side-azure.vercel.app /delete/${_id}`, {
+                fetch(`https://toy-marketplace-server-side-azure.vercel.app/delete/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

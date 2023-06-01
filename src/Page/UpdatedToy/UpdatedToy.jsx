@@ -17,7 +17,7 @@ useTitle('Updated Toys')
         console.log(data.price);
 
 
-        fetch(`https://toy-marketplace-server-side-azure.vercel.app /allCollection/${_id}`, {
+        fetch(`https://toy-marketplace-server-side-azure.vercel.app/allCollection/${_id}`, {
 
             method: 'PUT',
             headers: {
