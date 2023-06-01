@@ -10,7 +10,7 @@ const ShopByCategory = () => {
 
     const [category, setCategory] = useState([])
     useEffect(() => {
-        fetch('https://toy-marketplace-server-sigma-two.vercel.app/allCollection')
+        fetch('https://toy-marketplace-server-side-azure.vercel.app /allCollection')
             .then(res => res.json())
             .then(data => setCategory(data))
 
