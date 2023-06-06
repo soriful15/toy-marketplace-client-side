@@ -54,6 +54,7 @@ const MyToys = () => {
     //     setMyToys(remaining)
     // }
     const handleDelete = (_id) => {
+        // console.log(_id)
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -64,23 +65,25 @@ const MyToys = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://toy-marketplace-server-side-azure.vercel.app/delete/${_id}`, {
-                    method: 'DELETE'
-                })
-                    .then(res => res.json())
-                    .then(data => {
-                        if (data.deletedCount > 0) {
-                            Swal.fire(
-                                'Deleted!',
-                                'Your file has been deleted.',
-                                'success'
-                            )
-                        }
-                    })
+                console.log('Deleted Confirm')
             }
         })
-        const remaining = myToys.filter(toy => toy._id !== _id)
-        setMyToys(remaining)
+        fetch(`https://toy-marketplace-server-side-azure.vercel.app/delete/${_id}`, {
+            method: 'DELETE',
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.deletedCount > 0) {
+                    Swal.fire(
+                        'Deleted!',
+                        'Your Chocolate has been deleted.',
+                        'success'
+                    )
+                }
+                const remaining = myToys.filter(toy => toy._id !== _id)
+                setMyToys(remaining)
+            })
     }
 
 
