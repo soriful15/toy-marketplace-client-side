@@ -17,42 +17,6 @@ const MyToys = () => {
             .then(data => setMyToys(data))
     }, [url, user])
 
-
-    // const handleDelete = (_id) => {
-    //     console.log(_id)
-    //     fetch(`https://toy-marketplace-server-side-azure.vercel.app /delete/${_id}`, {
-    //         method: 'DELETE',
-
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             console.log(data)
-    //             if (data.deletedCount > 0) {
-    //                 Swal.fire({
-    //                     title: 'Are you sure?',
-    //                     text: "You won't be able to revert this!",
-    //                     icon: 'warning',
-    //                     showCancelButton: true,
-    //                     confirmButtonColor: '#3085d6',
-    //                     cancelButtonColor: '#d33',
-    //                     confirmButtonText: 'Yes, delete it!'
-    //                 }).then((result) => {
-    //                     if (result.isConfirmed) {
-    //                         Swal.fire(
-    //                             'Deleted!',
-    //                             'Your file has been deleted.',
-    //                             'success'
-    //                         )
-    //                     }
-    //                 })
-
-    //             }
-
-
-    //         })
-    //     const remaining = myToys.filter(toy => toy._id !== _id)
-    //     setMyToys(remaining)
-    // }
     const handleDelete = (_id) => {
         // console.log(_id)
         Swal.fire({
@@ -66,24 +30,46 @@ const MyToys = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 console.log('Deleted Confirm')
+
+                fetch(`https://toy-marketplace-server-side-azure.vercel.app/delete/${_id}`, {
+                    method: 'DELETE',
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data)
+                        if (data.deletedCount > 0) {
+                            Swal.fire(
+                                'Deleted!',
+                                'Your Chocolate has been deleted.',
+                                'success'
+                            )
+                            const remaining = myToys.filter(toy => toy._id !== _id)
+                            setMyToys(remaining)
+                        }
+                    })
+
+
+
+
+
             }
         })
-        fetch(`https://toy-marketplace-server-side-azure.vercel.app/delete/${_id}`, {
-            method: 'DELETE',
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
-                if (data.deletedCount > 0) {
-                    Swal.fire(
-                        'Deleted!',
-                        'Your Chocolate has been deleted.',
-                        'success'
-                    )
-                    const remaining = myToys.filter(toy => toy._id !== _id)
-                    setMyToys(remaining)
-                }
-            })
+        // fetch(`https://toy-marketplace-server-side-azure.vercel.app/delete/${_id}`, {
+        //     method: 'DELETE',
+        // })
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         console.log(data)
+        //         if (data.deletedCount > 0) {
+        //             Swal.fire(
+        //                 'Deleted!',
+        //                 'Your Chocolate has been deleted.',
+        //                 'success'
+        //             )
+        //             const remaining = myToys.filter(toy => toy._id !== _id)
+        //             setMyToys(remaining)
+        //         }
+        //     })
     }
 
 
