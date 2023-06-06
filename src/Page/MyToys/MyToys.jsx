@@ -54,22 +54,6 @@ const MyToys = () => {
 
             }
         })
-        // fetch(`https://toy-marketplace-server-side-azure.vercel.app/delete/${_id}`, {
-        //     method: 'DELETE',
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data)
-        //         if (data.deletedCount > 0) {
-        //             Swal.fire(
-        //                 'Deleted!',
-        //                 'Your Chocolate has been deleted.',
-        //                 'success'
-        //             )
-        //             const remaining = myToys.filter(toy => toy._id !== _id)
-        //             setMyToys(remaining)
-        //         }
-        //     })
     }
 
 
