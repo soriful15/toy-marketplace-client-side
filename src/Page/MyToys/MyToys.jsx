@@ -41,7 +41,7 @@ const MyToys = () => {
             if (data.deletedCount > 0) {
               Swal.fire(
                 'Deleted!',
-                'Your Chocolate has been deleted.',
+                'Your Toy has been deleted.',
                 'success'
               )
             }
