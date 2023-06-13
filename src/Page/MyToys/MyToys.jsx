@@ -45,9 +45,9 @@ const MyToys = () => {
                 'success'
               )
             }
-            const remaining = myToys.filter(toy => toy._id !== _id)
-            setMyToys(remaining)
-          })
+        })
+        const remaining = myToys.filter(toy => toy._id !== _id)
+        setMyToys(remaining)
       }
 
 
